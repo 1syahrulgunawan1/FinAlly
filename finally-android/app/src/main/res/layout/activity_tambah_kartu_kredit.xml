@@ -1,0 +1,188 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+            android:id="@+id/one"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/appbar"
+            android:background="@color/grey"
+            android:elevation="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/background" />
+
+            <ImageView
+                android:id="@+id/iv_color"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_credit_card_white" />
+
+
+            <TextView
+                android:id="@+id/tv_namabank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/ed_limitkredit"
+                android:layout_marginStart="60dp"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/ed_namakartu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="20dp"
+                android:hint="Nama kartu" />
+
+            <EditText
+                android:id="@+id/ed_limitkredit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/ed_namakartu"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="20dp"
+                android:hint="Limit kredit" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/two"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/one"
+            android:layout_marginTop="10dp"
+            android:background="@color/grey">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_cetak_tagihan" />
+
+            <TextView
+                android:id="@+id/tv_cetaktagihan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="50dp"
+                android:hint="Cetak tagihan"
+                android:textColorHint="@android:color/black"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="150dp"
+                android:src="@drawable/ic_calendar" />
+
+            <TextView
+                android:id="@+id/tv_jatuhtempo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="62dp"
+                android:hint="Jatuh tempo"
+                android:textColorHint="@android:color/black"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/two"
+            android:elevation="5dp">
+
+            <EditText
+                android:id="@+id/ed_bunga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_bunga"
+                android:hint="Bunga (%)" />
+
+
+            <EditText
+                android:id="@+id/ed_minimumpayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ed_bunga"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/ic_minimum_payment"
+                android:hint="Minimum payment rate (%)" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ed_minimumpayment"
+                android:layout_marginTop="10dp" />
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_tambah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="55dp"
+            android:text="TAMBAH" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
