@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Pengaturan Umum">
+        <Preference
+            android:summary="Kamu dapat mengubah password di sini"
+            android:title="Password">
+
+            <intent android:targetPackage="javasign.net.FinAlly"
+                android:targetClass="javasign.net.FinAlly.activities.GantiPassword"/>
+
+        </Preference>
+
+        <Preference
+            android:summary="Tambah kategori Transaksi sesuai kebutuhan kamu"
+            android:title="Kategori">
+
+            <intent android:targetPackage="javasign.net.FinAlly"
+                android:targetClass="javasign.net.FinAlly.activities.Kategori"/>
+
+        </Preference>
+
+        <Preference
+            android:summary="Klik untuk mengelola sinkronisasi data"
+            android:title="Klik untuk mengelola sinkronisasi data   ">
+
+            <intent android:targetPackage="javasign.net.FinAlly"
+                android:targetClass="javasign.net.FinAlly.activities.Sinkronisasi"/>
+
+        </Preference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Pengaturan lainnya">
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

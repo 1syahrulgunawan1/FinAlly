@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/title_activity_LoginInternetbanking"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_below="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/one"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:id="@+id/tv_alias_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Sambung ke Internet Banking"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp" />
+
+
+                <TextView
+                    android:id="@+id/tv_urllogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/tv_alias_name"
+                    android:layout_marginBottom="10dp"
+                    android:text="https://ib.bankmandiri.co.id/retail/Login.do?action=form"
+                    android:textColor="@android:color/white"
+                    android:textSize="12dp"
+                    android:layout_alignLeft="@+id/tv_alias_name" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/two"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_below="@+id/one">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/textInput1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_instruction"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    app:errorEnabled="true">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/ed_userid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/textInput2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textInput1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    app:passwordToggleEnabled="true"
+                    app:errorEnabled="true">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/ed_pin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textInput2"
+                    android:background="@color/grey"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Connect now" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grey"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true">
+
+                    <ImageView
+                        android:id="@+id/iv_1"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/ic_ssl" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/iv_1"
+                        android:text="Login access is limited to security standards equivalent to banks. FinAlly cannot take money, make changes or make transactions in your account" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

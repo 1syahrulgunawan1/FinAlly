@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#EEEEEE</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="red">#F44336</color>
+    <color name="green">#2E7D32</color>
+    <color name="medium_grey">#9E9E9E</color>
+    <color name="button_grey">#757575</color>
+
+    <!-- General -->
+    <color name="about_item_icon_color">#313131</color>
+
+    <!-- Social -->
+    <color name="about_facebook_color">#3b5998</color>
+    <color name="about_twitter_color">#55acee</color>
+    <color name="about_instagram_color">#3f729b</color>
+    <color name="about_play_store_color">#45BBC2</color>
+    <color name="about_youtube_color">#cd201f</color>
+    <color name="about_github_color">#333333</color>
+</resources>

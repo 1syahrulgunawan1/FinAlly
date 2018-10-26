@@ -1,0 +1,188 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:TagsEditText="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbar">
+
+        <LinearLayout
+            android:id="@+id/L1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/ed_biaya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/ic_calculator"
+                android:drawablePadding="10dp"
+                android:editable="false"
+                android:hint="Insert Value"
+                android:imeOptions="actionNext"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/ed_tanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/ic_calendar"
+                android:drawablePadding="10dp"
+                android:editable="false"
+                android:hint="Choose date"
+                android:imeOptions="actionNext"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/ed_deskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/ic_deskripsi"
+                android:drawablePadding="10dp"
+                android:hint="Description"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:singleLine="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner_kategori"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/ed_akun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/ic_atmcard"
+                android:drawablePadding="10dp"
+                android:editable="false"
+                android:imeOptions="actionNext"
+                android:singleLine="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ic_pin" />
+
+                <Spinner
+                    android:id="@+id/spinner_invoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ed_lokasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawablePadding="10dp"
+                android:hint="Choose Location"
+                android:imeOptions="actionNext"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tv_alamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:imeOptions="actionNext"
+                android:singleLine="true"/>
+
+            <mabbas007.tagsedittext.TagsEditText
+                android:id="@+id/tagsEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/ic_tag"
+                android:drawablePadding="10dp"
+                android:hint="Tags"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:singleLine="true"
+                TagsEditText:allowSpaceInTag="true"
+                TagsEditText:tagsBackground="@drawable/square_default"
+                TagsEditText:tagsCloseImageRight="@drawable/tag_close" />
+
+            <EditText
+                android:id="@+id/ed_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/ic_note"
+                android:drawablePadding="10dp"
+                android:hint="Note"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/btn_tambah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ed_note"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorAccent"
+                android:text="Edit"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

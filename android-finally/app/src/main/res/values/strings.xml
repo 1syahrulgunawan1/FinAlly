@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">FinAlly</string>
+
+    <string name="one">ONE</string>
+    <string name="eight">EIGHT</string>
+    <string name="five">FIVE</string>
+    <string name="four">FOUR</string>
+    <string name="nine">NINE</string>
+    <string name="seven">SEVEN</string>
+    <string name="six">SIX</string>
+    <string name="ten">TEN</string>
+    <string name="three">THREE</string>
+    <string name="two">TWO</string>
+
+    <string name="title_activity_MainActivity">Rekening</string>
+    <string name="title_activity_KartuKredit">Creditcard</string>
+    <string name="title_activity_TambahKartuKredit">Add Creditcard</string>
+    <string name="title_activity_KategoriPromo">Promo</string>
+    <string name="title_activity_PilihVendor">Choose Bank</string>
+    <string name="title_activity_LoginInternetbanking">Connect to</string>
+    <string name="title_activity_TransaksiDetails">Detail Transaction</string>
+    <string name="title_activity_TambahTransaksi">Add Transaction</string>
+    <string name="title_activity_ListTransaksi">List Transaction</string>
+    <string name="title_activity_DetailsKartukredit">Detail Creditcard</string>
+    <string name="title_activity_Tentang">About</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_promo">Promo</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_profile">Profile</string>
+
+    <string name="create_account">Dont have an account ? Get registered in FinAlly now !</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="npassword">New Password</string>
+    <string name="cpassword">Confirm Password</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="register">Register</string>
+    <string name="back_to_login">Back</string>
+    <string name="title_activity_Setting">Setting</string>
+
+    <string name="about_page_description" translatable="false">FinAlly merupakan sebuah aplikasi yang memudahkan Pengguna untuk me-manajemen kartu kredit</string>
+    <string name="copy_right" translatable="false">Copyrights © %1$d</string>
+    <string name="about_contact_us">Contact us</string>
+    <string name="about_instagram">Follow us on Instagram</string>
+    <string name="about_facebook">Like us on Facebook</string>
+    <string name="about_play_store">Rate us on the Play Store</string>
+    <string name="about_youtube">Watch us on Youtube</string>
+    <string name="about_twitter">Follow us on Twitter</string>
+    <string name="about_github">Fork us on GitHub</string>
+    <string name="about_website">Visit our website</string>
+
+</resources>
